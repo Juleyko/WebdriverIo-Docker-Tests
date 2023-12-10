@@ -8,6 +8,7 @@ describe('Tariffs page', () => {
         if (cookieAcceptButton) {
             cookieAcceptButton.click()
         }
+        //setCookies doesn't work for some reason(
     })
 
     it('[case 1] should check tariffs availability', async () => {
