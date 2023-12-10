@@ -1,8 +1,6 @@
 import { assert } from 'chai';
 import tariffsPage from "../pageobjects/tariffs.page.js";
 
-
-
 describe('Tariffs page', () => {
     it('[case 1] should check availability of tariffs', async () => {
         await tariffsPage.isVisibleTariffCardPrimary();
