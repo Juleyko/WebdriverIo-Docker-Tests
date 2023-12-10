@@ -15,7 +15,7 @@ describe('Tariffs page', () => {
         const updatedPrice = await tariffsPage.priceValue.getText();
         assert.notEqual(initialPrice, updatedPrice, 'The price has not changed after selecting the number of employees');
     });
-    it('[case 3] should checking the clickability of buttons to get a consultation', async () => {
+    it('[case 3] should checking the clickability of buttons to get a consultation and redirect', async () => {
         await tariffsPage.checkButtonsClickableAndRedirect();
     });
 });

@@ -38,10 +38,9 @@ class TariffsPage extends Page {
         await firstOptionValue1.click();
     }
     static EXPECTED_URL = 'https://hurma.work/request/';
-    async checkButtonsClickableAndRedirect() {
+    async checkGetConsultationButtonsClickableAndRedirect() {
         this.getConsultationButtons.forEach((button, index) => {
             expect(button.isClickable(), 'Button ${index + 1} should be clickable').to.be.true;
-
             button.click();
             const currentUrl = browser.getUrl();
             expect(currentUrl, 'Button ${index + 1} should lead to the correct page').to.equal(TariffsPage.EXPECTED_URL);
