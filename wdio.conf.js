@@ -2,7 +2,6 @@ export const config = {
     before: async function (capabilities, specs) {
         await browser.url("https://hurma.work/tariffs/");
         await browser.setWindowSize(1600, 1200);
-
     },
     // ====================
     // Runner Configuration
@@ -141,7 +140,6 @@ export const config = {
         ui: 'bdd',
         timeout: 60000
     },
-
     //
     // =====
     // Hooks
@@ -238,8 +236,6 @@ export const config = {
      */
     // afterTest: function(test, context, { error, result, duration, passed, retries }) {
     // },
-
-
     /**
      * Hook that gets executed after the suite has ended
      * @param {object} suite suite details
