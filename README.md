@@ -19,19 +19,19 @@ git clone https://github.com/Juleyko/WebdriverIo-Docker-Tests.git
 npm install
 ```
 
-Запустіть тести з використанням npm:
+3. Запустіть тести з використанням npm:
 ```bash
 npm run wdio
 ```
-Для запуску з Docker:
+## Для запуску з Docker:
 
-Будуємо образ
+Будуємо образ (з використанням npm)
 ```bash
-docker image build -t test:latest .
+npm run build
 ```
-Запускаємо образ
+Запускаємо образ (з використанням npm)
 ```bash
-docker run -it test:latest
+npm run run
 ```
 ## Для докладної інформації та налаштувань перегляньте документацію 
 
