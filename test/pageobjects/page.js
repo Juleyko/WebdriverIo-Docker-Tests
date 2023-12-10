@@ -6,7 +6,6 @@ export class Page {
         })
         await element.click()
     }
-
     async selectDropdownOptionByIndex(dropdownEl, optionIndex) {
         await dropdownEl.selectByIndex(optionIndex)
     }
