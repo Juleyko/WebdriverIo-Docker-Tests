@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "build": "docker image build -t test:latest .",
+    "run": "docker run -it test:latest"
   },
   "keywords": [],
   "author": "",
