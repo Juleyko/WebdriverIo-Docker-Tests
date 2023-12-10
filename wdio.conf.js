@@ -1,38 +1,9 @@
 export const config = {
-    before: function (capabilities, specs) {
-        browser.url("https://hurma.work/tariffs/");
-        browser.setWindowSize(1600, 1200);
+    before: async function (capabilities, specs) {
+        await browser.url("https://hurma.work/tariffs/");
+        await browser.setWindowSize(1600, 1200);
+
     },
-    // runner: "local",
-    // specs: ["./test/specs/**/*.js"],
-    // capabilities: [
-    //     {
-    //         maxInstances: 1,
-    //         browserName: "firefox",
-    //         // "goog:chromeOptions": {
-    //         //     args: ["headless", "disable-gpu"],
-    //         // },
-    //         acceptInsecureCerts: true,
-    //     },
-    // ],
-    // logLevel: "info",
-    // bail: 0,
-    // baseUrl: "http://localhost",
-    // // port: 4444,
-    // waitforTimeout: 10000,
-    // connectionRetryTimeout: 120000,
-    // connectionRetryCount: 3,
-    // // services: ["chromedriver"],
-    // framework: "mocha",
-    // services: ["docker"],
-    // reporters: [
-    //     "spec",
-    // ],
-    // mochaOpts: {
-    //     ui: "bdd",
-    //     timeout: 60000,
-    // },
-    //
     // ====================
     // Runner Configuration
     // ====================
